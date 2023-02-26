@@ -367,7 +367,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "esp8266_pzem16_ac.step",
+      "step": "",
       "vrml": ""
     },
     "page_layout_descr_file": ""
