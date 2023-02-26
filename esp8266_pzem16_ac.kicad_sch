@@ -861,13 +861,13 @@
   (symbol (lib_id "Connector_Generic:Conn_01x02") (at 175.26 116.84 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 453e0fcf-1c32-4950-a8ed-84f28e4da016)
-    (property "Reference" "J?" (id 0) (at 177.8 116.8399 0)
+    (property "Reference" "J4" (id 0) (at 177.8 116.8399 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "LED" (id 1) (at 177.8 119.3799 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" (id 2) (at 175.26 116.84 0)
+    (property "Footprint" "-local:my_LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" (id 2) (at 175.26 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 175.26 116.84 0)
@@ -1055,7 +1055,7 @@
   (symbol (lib_id "power:GND") (at 170.18 119.38 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid a27e6b16-f8ef-4850-bfe6-f11e9b924a41)
-    (property "Reference" "#PWR?" (id 0) (at 170.18 125.73 0)
+    (property "Reference" "#PWR0103" (id 0) (at 170.18 125.73 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 170.18 124.46 0))
@@ -1110,7 +1110,7 @@
   (symbol (lib_id "Device:R") (at 166.37 116.84 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid c39253fe-c765-4f0f-b366-0c03b031c8db)
-    (property "Reference" "R?" (id 0) (at 165.1 119.38 90)
+    (property "Reference" "R7" (id 0) (at 165.1 119.38 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "330" (id 1) (at 165.1 116.84 90)
@@ -1255,7 +1255,7 @@
     (property "Value" "LED" (id 1) (at 140.97 119.3799 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" (id 2) (at 138.43 116.84 0)
+    (property "Footprint" "-local:my_LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" (id 2) (at 138.43 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 138.43 116.84 0)
@@ -1329,7 +1329,7 @@
       (reference "#PWR0102") (unit 1) (value "+3.3V") (footprint "")
     )
     (path "/a27e6b16-f8ef-4850-bfe6-f11e9b924a41"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0103") (unit 1) (value "GND") (footprint "")
     )
     (path "/0b104385-e290-43d4-a37a-ec2006b60043"
       (reference "C1") (unit 1) (value "10u") (footprint "Capacitor_SMD:C_0805_2012Metric")
@@ -1347,10 +1347,10 @@
       (reference "J2") (unit 1) (value "PWR") (footprint "-local:2pin_pad")
     )
     (path "/f7bc3f95-d9ea-47e1-b943-f8152e138e07"
-      (reference "J3") (unit 1) (value "LED") (footprint "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
+      (reference "J3") (unit 1) (value "LED") (footprint "-local:my_LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
     )
     (path "/453e0fcf-1c32-4950-a8ed-84f28e4da016"
-      (reference "J?") (unit 1) (value "LED") (footprint "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
+      (reference "J4") (unit 1) (value "LED") (footprint "-local:my_LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
     )
     (path "/fc69fd74-a2f1-4401-aa31-119d182b2f7f"
       (reference "R1") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0805_2012Metric")
@@ -1371,7 +1371,7 @@
       (reference "R6") (unit 1) (value "330") (footprint "Resistor_SMD:R_0805_2012Metric")
     )
     (path "/c39253fe-c765-4f0f-b366-0c03b031c8db"
-      (reference "R?") (unit 1) (value "330") (footprint "Resistor_SMD:R_0805_2012Metric")
+      (reference "R7") (unit 1) (value "330") (footprint "Resistor_SMD:R_0805_2012Metric")
     )
     (path "/483a250d-07cc-4190-b382-29776026e64c"
       (reference "U1") (unit 1) (value "ESP-12F") (footprint "RF_Module:ESP-12E")
