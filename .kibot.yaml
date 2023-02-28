@@ -30,7 +30,7 @@ outputs:
     type: pcb_print
     options:
       output: 'gen/pcb.pdf'
-      title: "MagLock 2"
+      title: "ESP8266 RS485"
       force_edge_cuts: true
       keep_temporal_files: false
       plot_sheet_reference: false
@@ -43,26 +43,8 @@ outputs:
             color: '#111111'
           - layer: F.SilkS
             color: '#FFFFFF'
-
-        - sheet: 'Functional Overview'
-          layers: [ User.3, User.2 ]
-          monochrome: true
-
-        - sheet: 'Power and Fuses'
-          layers: [ User.3, User.4 ]
-          monochrome: true
-
-        - sheet: 'LED Indicators'
-          layers: [ User.3, User.5 ]
-          monochrome: true
-
-        - sheet: 'Board Dimensions'
-          layers: [ User.8 ]
-          monochrome: true
-
-        - sheet: 'Mounting Holes'
-          layers: [ User.9 ]
-          monochrome: true
+          - layer: User.Drawings
+            color: '#111111'
 
 
   - name: pcb_image_2d_front
@@ -70,14 +52,14 @@ outputs:
     options:
       output: 'gen/img_pcb_2d_front_bare.jpg'
       format: jpg
-      dpi: 300
+      dpi: 600
 
   - name: pcb_image_2d_back
     type: pcbdraw
     options:
       output: 'gen/img_pcb_2d_back_bare.jpg'
       format: jpg
-      dpi: 300
+      dpi: 600
       bottom: true
 
 
@@ -86,21 +68,34 @@ outputs:
     options:
       output: 'gen/img_pcb_3d_main.png'
       download: true
-      rotate_x: 7
-      rotate_z: -3
-      move_y: 2
+      rotate_x: 2
+      rotate_z: 10
+      move_y: 1
       solder_mask: '#104020'
       orthographic: false
       ray_tracing: true
       width: 1200
       height: 1000
-      view: top
+      view: bottom
+      zoom: 2
+      
+  - name: pcb_image_3d_back
+    type: render_3d
+    options:
+      output: 'gen/img_pcb_3d_front.png'
+      orthographic: true
+      download: true
+      solder_mask: '#104020'
+      ray_tracing: true
+      width: 1200
+      height: 1200
+      view: bottom
       zoom: 3
 
   - name: pcb_image_3d_front
     type: render_3d
     options:
-      output: 'gen/img_pcb_3d_front.png'
+      output: 'gen/img_pcb_3d_back.png'
       orthographic: true
       download: true
       solder_mask: '#104020'
@@ -117,7 +112,7 @@ outputs:
       output: 'gen/bom_ibom.html'
       no_compression: true
       highlight_pin1: true
-      layer_view: F
+      layer_view: FB
 
   - name: full_bom
     type: bom

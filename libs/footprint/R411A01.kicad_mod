@@ -26,7 +26,7 @@
   (pad "5" smd rect (at 10.414 10.922) (size 2.286 1.524) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp b2e32133-1021-4efb-a734-68ae235a7dcd))
   (pad "6" smd rect (at 10.414 13.462) (size 2.286 1.524) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 5826fde3-0c71-474b-b7ad-30a4e4574953))
   (pad "7" smd rect (at 10.414 16.002) (size 2.286 1.524) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 60d32a0e-e148-4c26-bbba-6d51f004073b))
-  (model "/home/majo/Downloads/R411A01.step"
+  (model "${KIPRJMOD}/libs/model/R411A01.step"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

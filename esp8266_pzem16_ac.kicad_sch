@@ -864,7 +864,7 @@
     (property "Reference" "J4" (id 0) (at 177.8 116.8399 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "LED" (id 1) (at 177.8 119.3799 0)
+    (property "Value" "DATA" (id 1) (at 177.8 119.3799 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "-local:my_LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" (id 2) (at 175.26 116.84 0)
@@ -1252,7 +1252,7 @@
     (property "Reference" "J3" (id 0) (at 140.97 116.8399 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "LED" (id 1) (at 140.97 119.3799 0)
+    (property "Value" "PWR" (id 1) (at 140.97 119.3799 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "-local:my_LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" (id 2) (at 138.43 116.84 0)
@@ -1347,10 +1347,10 @@
       (reference "J2") (unit 1) (value "PWR") (footprint "-local:2pin_pad")
     )
     (path "/f7bc3f95-d9ea-47e1-b943-f8152e138e07"
-      (reference "J3") (unit 1) (value "LED") (footprint "-local:my_LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
+      (reference "J3") (unit 1) (value "PWR") (footprint "-local:my_LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
     )
     (path "/453e0fcf-1c32-4950-a8ed-84f28e4da016"
-      (reference "J4") (unit 1) (value "LED") (footprint "-local:my_LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
+      (reference "J4") (unit 1) (value "DATA") (footprint "-local:my_LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
     )
     (path "/fc69fd74-a2f1-4401-aa31-119d182b2f7f"
       (reference "R1") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0805_2012Metric")
